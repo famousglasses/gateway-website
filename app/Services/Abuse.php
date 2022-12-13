@@ -2,6 +2,7 @@
 
 namespace App\Services;
 use App\Libraries\Request;
+use Gratify\App;
 
 class Abuse {
 	public function __construct(App $app) {
@@ -9,7 +10,6 @@ class Abuse {
 	}
 
 	public function test() {
-		var_dump("HELLO");
 	}
 }
 
