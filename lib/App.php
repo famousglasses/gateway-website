@@ -41,7 +41,7 @@ class App {
 		$this->setTemplate($_ENV['DEFAULT_TEMPLATE']);
 
 		if ($_ENV['DEV_MODE']) {
-			$this->getLogger()->out(strtoupper(_METHOD) . ' ' . (_CLI ? $route : $_SERVER['REQUEST_URI']) . ' FROM ' . _CLIENT . (!_CLI ? " {$os}/{$browser}" : ''));
+			$this->getLogger()->out(strtoupper(_METHOD) . ' ' . (_CLI ? $route : $_SERVER['REQUEST_URI']) . ' FROM ' . _CLIENT);
 		}
 	}
 
