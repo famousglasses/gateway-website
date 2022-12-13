@@ -1,3 +1,3 @@
-# gratify
-Gratify is a full stack web application framework.
+# gateway
+Gateway services, mainly for abuse handling right now.
 
