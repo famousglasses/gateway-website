@@ -6,7 +6,9 @@ use Gratify\App;
 
 class Abuse {
 	public function __construct(App $app) {
-		Request::enforceAuth($app);
+		if (!_CLI) {
+			Request::enforceAuth($app);
+		}
 	}
 
 	public function test() {
